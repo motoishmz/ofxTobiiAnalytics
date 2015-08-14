@@ -20,6 +20,7 @@ bool Tracker::open(string tracker_id)
 		listTrackers();
 		return false;
 	}
+	
 	uint32_t tetserverPort = 0;
 	uint32_t syncPort = 0;
 	
@@ -30,6 +31,7 @@ bool Tracker::open(string tracker_id)
 		EyeTrackerFactory::pointer_t eyeTrackerFactory = EyeTrackerBrowserFactory::createEyeTrackerFactoryByIpAddressOrHostname(tracker_id, tetserverPort, syncPort);
 		
 		if (eyeTrackerFactory) {
+			
 			runner_ = new MainLoopRunner();
 			runner_->start();
 			tracker = eyeTrackerFactory->createEyeTracker(runner_->getMainLoop());
@@ -37,6 +39,7 @@ bool Tracker::open(string tracker_id)
 			tracker_id_ = tracker_id;
 			tracker_found_ = true;
 			cout << "Connected to: " << tracker_id_ << endl;
+			
 			startTracking();
 		}
 		else {
@@ -65,7 +68,7 @@ void Tracker::startTracking() {
 	tracker->startTracking();
 	tracker->addGazeDataReceivedListener(boost::bind(&Tracker::onGazeDataReceived, this, _1));
 	
-	cout << "Tracking started" << endl;
+	cout << "Tracking started." << endl;
 }
 
 void Tracker::stopTracking() {
@@ -235,7 +238,6 @@ void Tracker::onEyeTrackerBrowserEventList(tetio::EyeTrackerBrowser::event_type_
 								  tetio::EyeTrackerInfo::pointer_t info) {
 	
 	if (type == EyeTrackerBrowser::TRACKER_FOUND) {
-		
 		if (auto_device_detect_) {
 			cout << "trackerid: " << tracker_id_ << endl;
 			tracker_id_ = info->getProductId();
