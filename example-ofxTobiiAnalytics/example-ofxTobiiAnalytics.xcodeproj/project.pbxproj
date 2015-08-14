@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9AAFE4061B7DCEA70066B07C /* libtetio.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AAFE3FB1B7DCEA70066B07C /* libtetio.dylib */; };
+		9AAFE4071B7DCEA70066B07C /* readme.md in Sources */ = {isa = PBXBuildFile; fileRef = 9AAFE3FC1B7DCEA70066B07C /* readme.md */; };
+		9AAFE4081B7DCEA70066B07C /* MainLoopRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9AAFE4011B7DCEA70066B07C /* MainLoopRunner.cpp */; };
+		9AAFE40A1B7DD1C00066B07C /* libtetio.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9AAFE3FB1B7DCEA70066B07C /* libtetio.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
+		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4328147138ABC890047C5CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B27C1510CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+		E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E4B27C1410CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E4C2427710CC5ABF004149E2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9AAFE40A1B7DD1C00066B07C /* libtetio.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9AAFE3D71B7DCEA70066B07C /* blob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blob.h; sourceTree = "<group>"; };
+		9AAFE3D81B7DCEA70066B07C /* clock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clock.h; sourceTree = "<group>"; };
+		9AAFE3D91B7DCEA70066B07C /* discovery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = discovery.h; sourceTree = "<group>"; };
+		9AAFE3DA1B7DCEA70066B07C /* error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = error.h; sourceTree = "<group>"; };
+		9AAFE3DB1B7DCEA70066B07C /* errorcodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = errorcodes.h; sourceTree = "<group>"; };
+		9AAFE3DC1B7DCEA70066B07C /* mainloop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainloop.h; sourceTree = "<group>"; };
+		9AAFE3DD1B7DCEA70066B07C /* messagepasser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = messagepasser.h; sourceTree = "<group>"; };
+		9AAFE3DE1B7DCEA70066B07C /* paramstack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = paramstack.h; sourceTree = "<group>"; };
+		9AAFE3DF1B7DCEA70066B07C /* paramtype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = paramtype.h; sourceTree = "<group>"; };
+		9AAFE3E01B7DCEA70066B07C /* syncmanager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = syncmanager.h; sourceTree = "<group>"; };
+		9AAFE3E11B7DCEA70066B07C /* upgrade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = upgrade.h; sourceTree = "<group>"; };
+		9AAFE3E21B7DCEA70066B07C /* vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vector.h; sourceTree = "<group>"; };
+		9AAFE3E31B7DCEA70066B07C /* core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = core.h; sourceTree = "<group>"; };
+		9AAFE3E51B7DCEA70066B07C /* AsyncResult.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AsyncResult.hpp; sourceTree = "<group>"; };
+		9AAFE3E61B7DCEA70066B07C /* Calibration.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Calibration.hpp; sourceTree = "<group>"; };
+		9AAFE3E71B7DCEA70066B07C /* Clock.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Clock.hpp; sourceTree = "<group>"; };
+		9AAFE3E81B7DCEA70066B07C /* EyeTracker.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EyeTracker.hpp; sourceTree = "<group>"; };
+		9AAFE3E91B7DCEA70066B07C /* EyeTrackerBrowser.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EyeTrackerBrowser.hpp; sourceTree = "<group>"; };
+		9AAFE3EA1B7DCEA70066B07C /* EyeTrackerBrowserFactory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EyeTrackerBrowserFactory.hpp; sourceTree = "<group>"; };
+		9AAFE3EB1B7DCEA70066B07C /* EyeTrackerException.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EyeTrackerException.hpp; sourceTree = "<group>"; };
+		9AAFE3EC1B7DCEA70066B07C /* EyeTrackerFactory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EyeTrackerFactory.hpp; sourceTree = "<group>"; };
+		9AAFE3ED1B7DCEA70066B07C /* EyeTrackerInfo.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EyeTrackerInfo.hpp; sourceTree = "<group>"; };
+		9AAFE3EE1B7DCEA70066B07C /* GazeDataItem.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GazeDataItem.hpp; sourceTree = "<group>"; };
+		9AAFE3EF1B7DCEA70066B07C /* Library.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Library.hpp; sourceTree = "<group>"; };
+		9AAFE3F01B7DCEA70066B07C /* MainLoop.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MainLoop.hpp; sourceTree = "<group>"; };
+		9AAFE3F11B7DCEA70066B07C /* ParamStack.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ParamStack.hpp; sourceTree = "<group>"; };
+		9AAFE3F21B7DCEA70066B07C /* ProgressReporter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ProgressReporter.hpp; sourceTree = "<group>"; };
+		9AAFE3F31B7DCEA70066B07C /* SyncManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SyncManager.hpp; sourceTree = "<group>"; };
+		9AAFE3F41B7DCEA70066B07C /* SyncState.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SyncState.hpp; sourceTree = "<group>"; };
+		9AAFE3F51B7DCEA70066B07C /* Types.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Types.hpp; sourceTree = "<group>"; };
+		9AAFE3F61B7DCEA70066B07C /* UpgradePackage.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = UpgradePackage.hpp; sourceTree = "<group>"; };
+		9AAFE3F71B7DCEA70066B07C /* defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defines.h; sourceTree = "<group>"; };
+		9AAFE3FB1B7DCEA70066B07C /* libtetio.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libtetio.dylib; sourceTree = "<group>"; };
+		9AAFE3FC1B7DCEA70066B07C /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		9AAFE3FF1B7DCEA70066B07C /* Calibration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calibration.h; sourceTree = "<group>"; };
+		9AAFE4001B7DCEA70066B07C /* CalibrationPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalibrationPlot.h; sourceTree = "<group>"; };
+		9AAFE4011B7DCEA70066B07C /* MainLoopRunner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainLoopRunner.cpp; sourceTree = "<group>"; };
+		9AAFE4021B7DCEA70066B07C /* MainLoopRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainLoopRunner.h; sourceTree = "<group>"; };
+		9AAFE4031B7DCEA70066B07C /* Ticker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ticker.h; sourceTree = "<group>"; };
+		9AAFE4041B7DCEA70066B07C /* Tracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tracker.h; sourceTree = "<group>"; };
+		9AAFE4051B7DCEA70066B07C /* ofxTobiiAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxTobiiAnalytics.h; sourceTree = "<group>"; };
+		9AAFE40C1B7DD5EE0066B07C /* GazeEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GazeEvent.h; sourceTree = "<group>"; };
+		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
+		E4B69B5B0A3A1756003C02F2 /* example-ofxTobiiAnalyticsDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "example-ofxTobiiAnalyticsDebug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
+		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../../libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
+		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4B69B590A3A1756003C02F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AAFE4061B7DCEA70066B07C /* libtetio.dylib in Frameworks */,
+				E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9AAFE3D01B7DCEA70066B07C /* ofxTobiiAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				9AAFE3D11B7DCEA70066B07C /* libs */,
+				9AAFE3FC1B7DCEA70066B07C /* readme.md */,
+				9AAFE3FD1B7DCEA70066B07C /* src */,
+			);
+			name = ofxTobiiAnalytics;
+			path = ../../../addons/ofxTobiiAnalytics;
+			sourceTree = "<group>";
+		};
+		9AAFE3D11B7DCEA70066B07C /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				9AAFE3D21B7DCEA70066B07C /* Tobii */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		9AAFE3D21B7DCEA70066B07C /* Tobii */ = {
+			isa = PBXGroup;
+			children = (
+				9AAFE3D31B7DCEA70066B07C /* include */,
+				9AAFE3FA1B7DCEA70066B07C /* lib */,
+			);
+			path = Tobii;
+			sourceTree = "<group>";
+		};
+		9AAFE3D31B7DCEA70066B07C /* include */ = {
+			isa = PBXGroup;
+			children = (
+				9AAFE3D41B7DCEA70066B07C /* tobii */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		9AAFE3D41B7DCEA70066B07C /* tobii */ = {
+			isa = PBXGroup;
+			children = (
+				9AAFE3D51B7DCEA70066B07C /* sdk */,
+			);
+			path = tobii;
+			sourceTree = "<group>";
+		};
+		9AAFE3D51B7DCEA70066B07C /* sdk */ = {
+			isa = PBXGroup;
+			children = (
+				9AAFE3D61B7DCEA70066B07C /* core */,
+				9AAFE3E31B7DCEA70066B07C /* core.h */,
+				9AAFE3E41B7DCEA70066B07C /* cpp */,
+				9AAFE3F71B7DCEA70066B07C /* defines.h */,
+			);
+			path = sdk;
+			sourceTree = "<group>";
+		};
+		9AAFE3D61B7DCEA70066B07C /* core */ = {
+			isa = PBXGroup;
+			children = (
+				9AAFE3D71B7DCEA70066B07C /* blob.h */,
+				9AAFE3D81B7DCEA70066B07C /* clock.h */,
+				9AAFE3D91B7DCEA70066B07C /* discovery.h */,
+				9AAFE3DA1B7DCEA70066B07C /* error.h */,
+				9AAFE3DB1B7DCEA70066B07C /* errorcodes.h */,
+				9AAFE3DC1B7DCEA70066B07C /* mainloop.h */,
+				9AAFE3DD1B7DCEA70066B07C /* messagepasser.h */,
+				9AAFE3DE1B7DCEA70066B07C /* paramstack.h */,
+				9AAFE3DF1B7DCEA70066B07C /* paramtype.h */,
+				9AAFE3E01B7DCEA70066B07C /* syncmanager.h */,
+				9AAFE3E11B7DCEA70066B07C /* upgrade.h */,
+				9AAFE3E21B7DCEA70066B07C /* vector.h */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		9AAFE3E41B7DCEA70066B07C /* cpp */ = {
+			isa = PBXGroup;
+			children = (
+				9AAFE3E51B7DCEA70066B07C /* AsyncResult.hpp */,
+				9AAFE3E61B7DCEA70066B07C /* Calibration.hpp */,
+				9AAFE3E71B7DCEA70066B07C /* Clock.hpp */,
+				9AAFE3E81B7DCEA70066B07C /* EyeTracker.hpp */,
+				9AAFE3E91B7DCEA70066B07C /* EyeTrackerBrowser.hpp */,
+				9AAFE3EA1B7DCEA70066B07C /* EyeTrackerBrowserFactory.hpp */,
+				9AAFE3EB1B7DCEA70066B07C /* EyeTrackerException.hpp */,
+				9AAFE3EC1B7DCEA70066B07C /* EyeTrackerFactory.hpp */,
+				9AAFE3ED1B7DCEA70066B07C /* EyeTrackerInfo.hpp */,
+				9AAFE3EE1B7DCEA70066B07C /* GazeDataItem.hpp */,
+				9AAFE3EF1B7DCEA70066B07C /* Library.hpp */,
+				9AAFE3F01B7DCEA70066B07C /* MainLoop.hpp */,
+				9AAFE3F11B7DCEA70066B07C /* ParamStack.hpp */,
+				9AAFE3F21B7DCEA70066B07C /* ProgressReporter.hpp */,
+				9AAFE3F31B7DCEA70066B07C /* SyncManager.hpp */,
+				9AAFE3F41B7DCEA70066B07C /* SyncState.hpp */,
+				9AAFE3F51B7DCEA70066B07C /* Types.hpp */,
+				9AAFE3F61B7DCEA70066B07C /* UpgradePackage.hpp */,
+			);
+			path = cpp;
+			sourceTree = "<group>";
+		};
+		9AAFE3FA1B7DCEA70066B07C /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				9AAFE3FB1B7DCEA70066B07C /* libtetio.dylib */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		9AAFE3FD1B7DCEA70066B07C /* src */ = {
+			isa = PBXGroup;
+			children = (
+				9AAFE3FE1B7DCEA70066B07C /* ofxTobiiAnalytics */,
+				9AAFE4051B7DCEA70066B07C /* ofxTobiiAnalytics.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		9AAFE3FE1B7DCEA70066B07C /* ofxTobiiAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				9AAFE3FF1B7DCEA70066B07C /* Calibration.h */,
+				9AAFE4001B7DCEA70066B07C /* CalibrationPlot.h */,
+				9AAFE4011B7DCEA70066B07C /* MainLoopRunner.cpp */,
+				9AAFE4021B7DCEA70066B07C /* MainLoopRunner.h */,
+				9AAFE4031B7DCEA70066B07C /* Ticker.h */,
+				9AAFE4041B7DCEA70066B07C /* Tracker.h */,
+				9AAFE40C1B7DD5EE0066B07C /* GazeEvent.h */,
+			);
+			path = ofxTobiiAnalytics;
+			sourceTree = "<group>";
+		};
+		BB4B014C10F69532006C3DED /* addons */ = {
+			isa = PBXGroup;
+			children = (
+				9AAFE3D01B7DCEA70066B07C /* ofxTobiiAnalytics */,
+			);
+			name = addons;
+			sourceTree = "<group>";
+		};
+		E4328144138ABC890047C5CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4328148138ABC890047C5CB /* openFrameworksDebug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4B69B4A0A3A1720003C02F2 = {
+			isa = PBXGroup;
+			children = (
+				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
+				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
+				E4B69E1C0A3A1BDC003C02F2 /* src */,
+				E4EEC9E9138DF44700A80321 /* openFrameworks */,
+				BB4B014C10F69532006C3DED /* addons */,
+				E4B69B5B0A3A1756003C02F2 /* example-ofxTobiiAnalyticsDebug.app */,
+			);
+			sourceTree = "<group>";
+		};
+		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
+			);
+			path = src;
+			sourceTree = SOURCE_ROOT;
+		};
+		E4EEC9E9138DF44700A80321 /* openFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */,
+				E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */,
+			);
+			name = openFrameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4B69B5A0A3A1756003C02F2 /* example-ofxTobiiAnalytics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "example-ofxTobiiAnalytics" */;
+			buildPhases = (
+				E4B69B580A3A1756003C02F2 /* Sources */,
+				E4B69B590A3A1756003C02F2 /* Frameworks */,
+				E4B6FFFD0C3F9AB9008CF71C /* ShellScript */,
+				E4C2427710CC5ABF004149E2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4EEB9AC138B136A00A80321 /* PBXTargetDependency */,
+			);
+			name = "example-ofxTobiiAnalytics";
+			productName = myOFApp;
+			productReference = E4B69B5B0A3A1756003C02F2 /* example-ofxTobiiAnalyticsDebug.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4B69B4C0A3A1720003C02F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+			};
+			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "example-ofxTobiiAnalytics" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = E4B69B4A0A3A1720003C02F2;
+			productRefGroup = E4B69B4A0A3A1720003C02F2;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E4328144138ABC890047C5CB /* Products */;
+					ProjectRef = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E4B69B5A0A3A1756003C02F2 /* example-ofxTobiiAnalytics */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E4328148138ABC890047C5CB /* openFrameworksDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = openFrameworksDebug.a;
+			remoteRef = E4328147138ABC890047C5CB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E4B6FFFD0C3F9AB9008CF71C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -f ../../../libs/fmodex/lib/osx/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/libfmodex.dylib\"; install_name_tool -change ./libfmodex.dylib @executable_path/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";\nmkdir -p \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\ncp -f \"$ICON_FILE\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4B69B580A3A1756003C02F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AAFE4081B7DCEA70066B07C /* MainLoopRunner.cpp in Sources */,
+				9AAFE4071B7DCEA70066B07C /* readme.md in Sources */,
+				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4EEB9AC138B136A00A80321 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = openFrameworks;
+			targetProxy = E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E4B69B4E0A3A1720003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-lpthread",
+					"-mtune=native",
+				);
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E4B69B4F0A3A1720003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-lpthread",
+					"-mtune=native",
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E4B69B600A3A1757003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					../../../addons/ofxTobiiAnalytics/libs/Tobii/include,
+					/usr/local/Cellar/boost/1.57.0/include,
+				);
+				ICON = "$(ICON_NAME_DEBUG)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/boost/1.57.0/lib,
+					../../../addons/ofxTobiiAnalytics/libs/Tobii/lib,
+				);
+				OTHER_LDFLAGS = (
+					"$(OF_CORE_LIBS)",
+					"$(OF_CORE_FRAMEWORKS)",
+					"-lboost_thread-mt",
+					"-lboost_program_options",
+					"-lboost_system",
+				);
+				PRODUCT_NAME = "example-ofxTobiiAnalyticsDebug";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E4B69B610A3A1757003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					../../../addons/ofxTobiiAnalytics/libs/Tobii/include,
+					/usr/local/Cellar/boost/1.57.0/include,
+				);
+				ICON = "$(ICON_NAME_RELEASE)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/boost/1.57.0/lib,
+					../../../addons/ofxTobiiAnalytics/libs/Tobii/lib,
+				);
+				OTHER_LDFLAGS = (
+					"$(OF_CORE_LIBS)",
+					"$(OF_CORE_FRAMEWORKS)",
+					"-lboost_thread-mt",
+					"-lboost_program_options",
+					"-lboost_system",
+				);
+				PRODUCT_NAME = "example-ofxTobiiAnalytics";
+				WRAPPER_EXTENSION = app;
+				baseConfigurationReference = E4EB6923138AFD0F00A09F29;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "example-ofxTobiiAnalytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B4E0A3A1720003C02F2 /* Debug */,
+				E4B69B4F0A3A1720003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "example-ofxTobiiAnalytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B600A3A1757003C02F2 /* Debug */,
+				E4B69B610A3A1757003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4B69B4C0A3A1720003C02F2 /* Project object */;
+}
