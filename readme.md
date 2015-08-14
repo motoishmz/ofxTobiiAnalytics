@@ -7,7 +7,7 @@
 
 Download Tobii Analytics SDK 3.0 from [here](http://www.tobii.com/en/eye-tracking-research/global/landingpages/analysis-sdk-30/). 
 
-Copy these two directory
+Copy these two directories:
 
 -  `{SDKRoot}/cpp/include` 
 -  `{SDKRoot}/cpp/lib` 
