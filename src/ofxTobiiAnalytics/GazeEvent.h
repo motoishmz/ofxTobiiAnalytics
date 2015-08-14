@@ -31,6 +31,4 @@ public:
 	float rightPupilDiameter;
 };
 
-ofEvent <GazeEvent> GazeEvent::events;
-
 END_OFX_TOBII_ANALYTIKS_NAMESPACE
