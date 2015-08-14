@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A4366691B7E09DF00BA870C /* GazeEvent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4366661B7E09DF00BA870C /* GazeEvent.cpp */; };
+		9A43666A1B7E09DF00BA870C /* MainLoopRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4366671B7E09DF00BA870C /* MainLoopRunner.cpp */; };
+		9A43666B1B7E09DF00BA870C /* Tracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4366681B7E09DF00BA870C /* Tracker.cpp */; };
 		9AAFE4061B7DCEA70066B07C /* libtetio.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AAFE3FB1B7DCEA70066B07C /* libtetio.dylib */; };
 		9AAFE4071B7DCEA70066B07C /* readme.md in Sources */ = {isa = PBXBuildFile; fileRef = 9AAFE3FC1B7DCEA70066B07C /* readme.md */; };
-		9AAFE4081B7DCEA70066B07C /* MainLoopRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9AAFE4011B7DCEA70066B07C /* MainLoopRunner.cpp */; };
 		9AAFE40A1B7DD1C00066B07C /* libtetio.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9AAFE3FB1B7DCEA70066B07C /* libtetio.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
@@ -46,6 +48,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9A43665F1B7E09DF00BA870C /* Calibration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calibration.h; sourceTree = "<group>"; };
+		9A4366601B7E09DF00BA870C /* CalibrationPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalibrationPlot.h; sourceTree = "<group>"; };
+		9A4366611B7E09DF00BA870C /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		9A4366621B7E09DF00BA870C /* GazeEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GazeEvent.h; sourceTree = "<group>"; };
+		9A4366631B7E09DF00BA870C /* MainLoopRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainLoopRunner.h; sourceTree = "<group>"; };
+		9A4366641B7E09DF00BA870C /* Ticker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ticker.h; sourceTree = "<group>"; };
+		9A4366651B7E09DF00BA870C /* Tracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tracker.h; sourceTree = "<group>"; };
+		9A4366661B7E09DF00BA870C /* GazeEvent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GazeEvent.cpp; sourceTree = "<group>"; };
+		9A4366671B7E09DF00BA870C /* MainLoopRunner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainLoopRunner.cpp; sourceTree = "<group>"; };
+		9A4366681B7E09DF00BA870C /* Tracker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tracker.cpp; sourceTree = "<group>"; };
 		9AAFE3D71B7DCEA70066B07C /* blob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blob.h; sourceTree = "<group>"; };
 		9AAFE3D81B7DCEA70066B07C /* clock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clock.h; sourceTree = "<group>"; };
 		9AAFE3D91B7DCEA70066B07C /* discovery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = discovery.h; sourceTree = "<group>"; };
@@ -80,14 +92,7 @@
 		9AAFE3F71B7DCEA70066B07C /* defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defines.h; sourceTree = "<group>"; };
 		9AAFE3FB1B7DCEA70066B07C /* libtetio.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libtetio.dylib; sourceTree = "<group>"; };
 		9AAFE3FC1B7DCEA70066B07C /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
-		9AAFE3FF1B7DCEA70066B07C /* Calibration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calibration.h; sourceTree = "<group>"; };
-		9AAFE4001B7DCEA70066B07C /* CalibrationPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalibrationPlot.h; sourceTree = "<group>"; };
-		9AAFE4011B7DCEA70066B07C /* MainLoopRunner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainLoopRunner.cpp; sourceTree = "<group>"; };
-		9AAFE4021B7DCEA70066B07C /* MainLoopRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainLoopRunner.h; sourceTree = "<group>"; };
-		9AAFE4031B7DCEA70066B07C /* Ticker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ticker.h; sourceTree = "<group>"; };
-		9AAFE4041B7DCEA70066B07C /* Tracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tracker.h; sourceTree = "<group>"; };
 		9AAFE4051B7DCEA70066B07C /* ofxTobiiAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxTobiiAnalytics.h; sourceTree = "<group>"; };
-		9AAFE40C1B7DD5EE0066B07C /* GazeEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GazeEvent.h; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E4B69B5B0A3A1756003C02F2 /* example-ofxTobiiAnalyticsDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "example-ofxTobiiAnalyticsDebug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
@@ -228,13 +233,16 @@
 		9AAFE3FE1B7DCEA70066B07C /* ofxTobiiAnalytics */ = {
 			isa = PBXGroup;
 			children = (
-				9AAFE3FF1B7DCEA70066B07C /* Calibration.h */,
-				9AAFE4001B7DCEA70066B07C /* CalibrationPlot.h */,
-				9AAFE4011B7DCEA70066B07C /* MainLoopRunner.cpp */,
-				9AAFE4021B7DCEA70066B07C /* MainLoopRunner.h */,
-				9AAFE4031B7DCEA70066B07C /* Ticker.h */,
-				9AAFE4041B7DCEA70066B07C /* Tracker.h */,
-				9AAFE40C1B7DD5EE0066B07C /* GazeEvent.h */,
+				9A4366631B7E09DF00BA870C /* MainLoopRunner.h */,
+				9A4366671B7E09DF00BA870C /* MainLoopRunner.cpp */,
+				9A4366611B7E09DF00BA870C /* Common.h */,
+				9A43665F1B7E09DF00BA870C /* Calibration.h */,
+				9A4366601B7E09DF00BA870C /* CalibrationPlot.h */,
+				9A4366641B7E09DF00BA870C /* Ticker.h */,
+				9A4366621B7E09DF00BA870C /* GazeEvent.h */,
+				9A4366661B7E09DF00BA870C /* GazeEvent.cpp */,
+				9A4366651B7E09DF00BA870C /* Tracker.h */,
+				9A4366681B7E09DF00BA870C /* Tracker.cpp */,
 			);
 			path = ofxTobiiAnalytics;
 			sourceTree = "<group>";
@@ -371,9 +379,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AAFE4081B7DCEA70066B07C /* MainLoopRunner.cpp in Sources */,
+				9A43666A1B7E09DF00BA870C /* MainLoopRunner.cpp in Sources */,
 				9AAFE4071B7DCEA70066B07C /* readme.md in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+				9A4366691B7E09DF00BA870C /* GazeEvent.cpp in Sources */,
+				9A43666B1B7E09DF00BA870C /* Tracker.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

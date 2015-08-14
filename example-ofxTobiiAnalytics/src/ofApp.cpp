@@ -10,7 +10,7 @@ class ofApp : public ofBaseApp
 	
 	const int path_limit = 50;
 	deque<ofPoint> path;
-	ofPoint current_gaze_pos;
+	ofPoint gaze_pos;
 	
 public:
 	
@@ -18,15 +18,11 @@ public:
 	{
 		ofSetFrameRate(60);
 		ofSetVerticalSync(true);
-		
-		tracker.open("Your Tobii Device ID here"); // Something like X230C-XXXXXXXXXXXX written on the back of the device
-		if (tracker.isDeviceFound()) {
-			ofSetFullscreen(true);
-			ofAddListener(ofxTobiiAnalytics::GazeEvent::events, this, &ofApp::gazeDataReceived);
-			tracker.startTracking();
-		}
-		
+		ofSetFullscreen(true);
+
 		path.clear();
+		
+		ofAddListener(ofxTobiiAnalytics::GazeEvent::events, this, &ofApp::gazeDataReceived);
 	}
 	
 	void update()
@@ -37,9 +33,6 @@ public:
 	
 	void draw()
 	{
-		if (calib.isRunning())
-			return;
-		
 		if (tracker.isTracking() && !path.empty())
 		{
 			ofSetColor(0, 80);
@@ -47,24 +40,41 @@ public:
 			for (int i=1; i<path.size(); i++)
 				ofDrawLine(path.at(i-1), path.at(i));
 			
-			ofDrawCircle(current_gaze_pos, 30);
+			ofDrawCircle(path.front(), 30);
+		}
+		
+		if (!tracker.isDeviceFound()) {
+			ofDrawBitmapStringHighlight("Press [ spacebar ] to connect", 30, 30, ofColor::red);
 		}
 	}
 	
 	void keyPressed(int key)
 	{
-		if (key == 'f') {
-			ofToggleFullscreen();
+		if (key == ' ') {
+			
+			if (tracker.isTracking())
+				return;
+			
+			/*!
+				Without device id: Auto detection --> startTracking
+				Sometimes the EyeTrackerBrowser cannot find any devices, so calling this in setup() is not recommended.
+			 */
+			tracker.open();
+			
+			/*!
+				With device id: looking up the specific device --> startTracking
+				Stable.
+			 */
+			// tracker.open("X230C-XXXXXXXXXXXX");
 		}
 		
-		/*!
-			Danger!!!
-			ofxTobiiAnalytics::Calibration doesn't work correctly. See readme.md
-		 
 //		if (key == 'c') {
+//			/*!
+//				Danger!!!
+//				ofxTobiiAnalytics::Calibration doesn't work correctly. See readme.md
+//			 */
 //			calib.start(&tracker);
 //		}
-		 */
 	}
 	
 	void gazeDataReceived(ofxTobiiAnalytics::GazeEvent &data)
@@ -81,10 +91,10 @@ public:
 		mean.x *= ofGetScreenWidth();
 		mean.y *= ofGetScreenHeight();
 		
-//		current_gaze_pos = mean;
-		current_gaze_pos = (mean * 0.3) + (current_gaze_pos * (1 - 0.3)); //! in case you want to make it a bit smoothly...
-		cout << current_gaze_pos << endl;
-		path.push_front(current_gaze_pos);
+//		gaze_pos = mean;
+		gaze_pos = (mean * 0.3) + (gaze_pos * (1 - 0.3)); //! in case you want to make it a bit smoothly...
+		
+		path.push_front(gaze_pos);
 	}
 };
 
