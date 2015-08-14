@@ -1,5 +1,7 @@
-libs/Tobii/*
 
+# ofxTobiiAnalytics-specific ignore patterns
+libs/Tobii/*
+!libs/Tobii/Copy two directories to here.txt
 
 
 # Some general ignore patterns
